@@ -1,0 +1,86 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <map>
+#include <vector>
+#include <algorithm>
+
+//int sumOfDigits(int num) {
+//    int sum = 0, currentDigit;
+//
+//    while (num > 0) {
+//        currentDigit = num % 10;
+//        sum += currentDigit;
+//        num /= 10;
+//    }
+//
+//    if (sum > 9) sumOfDigits(sum);
+//    else return sum;
+//}
+//
+//int main()
+//{
+//    int n;
+//    std::cin >> n;
+//    std::cout << "Sum of digits is: " << sumOfDigits(n);
+//    return 0;
+//}
+
+
+////Program which saves the numbers from the sequence that occur odd times and check if the numbers divide by 3.
+//int main() {
+//	std::string input;
+//	getline(std::cin, input);
+//	std::stringstream ss(input);
+//	int num;
+//	std::map<int, int> numAndOccurences;
+//	while (ss >> num) {
+//		auto iter = numAndOccurences.find(num);
+//		if (iter != numAndOccurences.end())
+//		{
+//			iter->second++;
+//		}
+//		else {
+//			numAndOccurences.insert({ num,1 });
+//		}
+//	}
+//
+//	for (auto itr = numAndOccurences.begin(); itr != numAndOccurences.end(); ++itr) {
+//		if (itr->second % 2 != 0) {
+//			std::cout << "Number: " << itr->first << (itr->first % 3 == 0 ? " divides by 3" : " doesn't divide by 3") << std::endl;
+//		}
+//	}
+//	return 0;
+//}
+
+
+//void printTwoDimVector(std::vector<std::vector<std::string>> vec) {
+//	for (int i = 0; i < vec.size(); i++)
+//	{
+//		for (int j = 0; j < vec[i].size(); j++)
+//		{
+//			std::cout << vec[i][j] << std::endl;
+//		}
+//	}
+//}
+//
+//int main() {
+//	std::string input;
+//	getline(std::cin, input);
+//	std::stringstream ss(input);
+//
+//	std::vector<std::vector<std::string>> result;
+//	int i = 0;
+//	std::string word;
+//	while (ss >> word) {
+//		std::transform(word.begin(), word.end(), word.begin(), ::toupper);
+//		result.push_back(std::vector<std::string>());
+//		result[i].push_back(word);
+//		i++;
+//	}
+//
+//	printTwoDimVector(result);
+//
+//	return 0;
+//}
+
